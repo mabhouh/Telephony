@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 8rem;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bx-menu-alt-left{
+    font-size: 1.7rem;
+    display: none;
+}
+
+nav .logo {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+nav .logo i{
+    color: #6e0aef;
+    padding-left: 0.75rem;
+    cursor: pointer;
+}
+
+nav .logo h4{
+    font-family: "Lalezar", cursive;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 0 1rem;
+    transition: 0.5s;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #4e547e;
+    font-size: 1.2rem;
+    padding:  5px 10px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    background: #6e0aef;
+}
+
+
+.hero{
+    background-color: #f8f7fc;
+}
+
+.hero-section{
+    max-width: 1366px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 8rem;
+    margin-bottom: 40px;
+}
+
+.hero .hero-section .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .hero-section .content h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-section .content h1{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-section .content p{
+    color: black;
+    font-size: 1.4rem;
+}
+
+.hero .hero-section .content p span{
+    color: #6e0aef;
+}
+
+.hero-img img{
+    height: 90vh;
+    background-size: cover;
+}
+
+.btn{
+    width: 10rem;
+    background-color: #7d25f0;
+    margin-top: 3rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #6e0aef;
+    transform: translateX(13px);
+}
+
+section.features{
+    padding: 2rem 0;
+    background-color: #f8f7fc;
+}
+
+section.features .features-section{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.features-section .qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section .qualities .quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+}
+
+.features-section .qualities .quality:hover {
+    border-left: 2px dotted #6e0aef;
+    border-right: 2px solid#6e0aef;
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+
+.features-section .qualities .quality i{
+    font-size: 2rem;
+    color: #6e0aef;
+    margin-bottom: 1rem;
+}
+
+.features-section .qualities .quality h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.features-section .qualities .quality p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4e4e4e; 
+}
+
+.newest-phones{
+    padding-top: 5rem;
+}
+
+.phones-section{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.phones-section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.phones-section .phones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+}
+
+.phones-section .phones .phone{
+    margin: 2rem 0;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phones-section .phones .phone img{
+    margin-bottom: 1rem;
+    transition: 0.4s;
+}
+
+.phones-section .phones .phone img:hover{
+    scale: 1.1;
+}
+
+.phones-section .phones .phone h3{
+    font-size: 1.6rem;
+    color: #6e0aef;
+}
+
+.phones-section .btn{
+    width: 15rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+footer{
+    background-color: #f8f7fc;
+    height: 15vh;
+    margin-top: 5rem;
+    padding: 2rem 0;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1366px;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+.footer-section p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section .social{
+    margin-bottom: 1rem;
+}
+
+.footer-section .social i{
+    padding: 0 2px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+nav.sticky{
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 10px 10px -10px;
+    padding: 30px 8rem;
+    background-color: #fff;
+}
+
+@media(max-width : 1300px){
+    *{
+        font-size: 85%;
+    }
+}
+
+@media(max-width : 1170px){
+    *{
+        font-size: 80%;
+        text-align: center;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .hero-section{
+        align-items: center;
+        padding: 2rem 0;
+        width: 50%;
+    }
+
+    .hero .btn{
+        align-self: center;
+    }
+
+    .features-section .qualities{
+        flex-wrap: wrap;
+    }
+
+    .features-section .qualities .quality {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .hero-section{
+        height: 65vh;
+    }
+}
+
+
+@media(max-width: 660px){
+    .hero-section .content h1 {
+        font-size: 2rem;
+    }
+
+    .phones-section{
+        align-items: center;
+    }
+
+    .phones-section .phones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media(max-width: 500px){
+    .phones-section .phones{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    
+    nav .bx-menu-alt-left{
+        display: block;
+    }
+
+    nav .nav-items{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 10vh;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0;
+        background-color: #6e0aef;
+    }
+
+    nav .nav-items.active{
+        display: flex;
+    }
+
+    nav .nav-items .nav-item{
+        margin: 1rem 0;
+    }
+
+    nav .nav-items .nav-item a{
+        color: #fff;
+    }
+
+    .hero-section{
+        height: 90vh;
+    }
+
+    .features-section .qualities {
+        justify-content: center;
+    }
+ 
+    nav {
+        padding: 15px 4rem;
+    }
+
+    nav.sticky{
+        padding: 18px 5rem;
+
+    }
+}
+
+
+
+
